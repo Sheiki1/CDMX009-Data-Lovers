@@ -10,13 +10,36 @@
   <body>
     <div id="root"></div>
     <script type="module" src="main.js"></script>
-
-    <div class="imagenTitle">
-    </div>
+    <!-- imagen de titulo  -->
+    <div class="imagenTitle"></div>
+    <!-- botones de personajes, lugares y nosotras -->
     <div class="actionButton">
-        <button id="chartersButton">PERSONAJES</button>
-        <button id="placesButton">LUGARES</button>
-        <button id="aboutusButton">NOSOTROS</button>
+      <!-- boton de personajes-->
+      <button class="buttonP" id="chartersButton">PERSONAJES</button>
+     
+
+      <!-- boton de lugares-->
+      <button class="buttonP" id="placesButton">LUGARES</button>
+      <!-- Modal de lugares  -->
+      <div id="modalPlace" class="modal">
+        <!-- Modal content de lugares -->
+        <div class="modal-content">
+          <span class="closePlaces">&times;</span>
+          <p>Lugares</p>
+          <img id="rick" src="rick.jpg">
+        </div>
+      </div>
+      <!-- boton de nosotras-->
+      <button class="buttonP" id="usButton">NOSOTROS</button>
+      <!-- Modal de nosotras  -->
+      <div id="modalUs" class="modal">
+        <!-- Modal content de nosotras -->
+        <div class="modal-content">
+          <span class="closeUs">&times;</span>
+          <p>Nosotras</p>
+          <img id="rick" src="rick.jpg">
+        </div>
+      </div>
     </div>
     <br>
     <section id="slider"></section>
@@ -40,20 +63,24 @@
         <br>
         
     <div class="botonimagen">
-        <div class="botonimagenS"></div>
-        <div  class="botonimagenM"></div>
-        <div  class="botonimagenR"></div>
-        <div  class="botonimagenB"></div>
-        <div  class="botonimagenJ"></div>
-    </div>
-  
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <button class="botonimagenS"></button>
+        <button  class="botonimagenM"></button>
+        <button  class="botonimagenR" id="botonimagenR"></button>
+        <!-- Modal de personajes  -->
+      <div id="modalChar" class="modal">
+        <!-- Modal content de personajes -->
+        <div class="modal-content">
+          <span class="closeChar">&times;</span>
+          <p>RICK SANCHEZ</p>
+          <img id="rick" src="rick.jpg">
+        </div>
       </div>
+        <button  class="botonimagenB"></button>
+        <button  class="botonimagenJ"></button>
+    </div>
+
+    <p id="demo"></p>
+
     
     </div>
   </body>

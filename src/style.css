@@ -24,7 +24,7 @@ body {
   color: #707070;
 }
 
-button {
+.buttonP {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -58,6 +58,10 @@ button {
   background-image: url("https://i.ibb.co/0qfPg2L/sumerb.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: #04ADCA;
+  border-color:#04ADCA;
+  border-bottom: #04ADCA;
+  border-right: #04ADCA;
 }
 
 .botonimagenM{
@@ -69,6 +73,10 @@ button {
   background-image: url("https://i.ibb.co/2PQw1d0/mortyb.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: #04ADCA;
+  border-color:#04ADCA;
+  border-bottom: #04ADCA;
+  border-right: #04ADCA;
 }
 
 .botonimagenR{
@@ -80,6 +88,10 @@ button {
   background-image: url("https://i.ibb.co/PTnC4Bf/rickb.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: #04ADCA;
+  border-color:#04ADCA;
+  border-bottom: #04ADCA;
+  border-right: #04ADCA;
 }
 
 .botonimagenB{
@@ -91,6 +103,10 @@ button {
   background-image: url("https://i.ibb.co/4JNhr6d/bethb.png");
   background-repeat: no-repeat;
   background-size: contain;
+  background-color: #04ADCA;
+  border-color:#04ADCA;
+  border-bottom: #04ADCA;
+  border-right: #04ADCA;
 }
 
 .botonimagenJ{
@@ -101,11 +117,15 @@ button {
   height: 150px;
   background-image: url("https://i.ibb.co/wzp7sD7/b.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; 
+  background-color: #04ADCA;
+  border-color:#04ADCA;
+  border-bottom: #04ADCA;
+  border-right: #04ADCA;
 }
 
 @media only screen and (max-device-width: 450px){
-  button {
+  .buttonP {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -171,19 +191,22 @@ button {
 }
 
 /* The Close Button */
-.close {
+span {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  
 }
 
-.close:hover,
-.close:focus {
-  color: #000;
+span:hover, span:focus {
+  color: red;
   text-decoration: none;
-  cursor: pointer;
+  cursor:pointer;
 }
+
+
+
 .slider {
   width:100%;
   height:200px;
@@ -223,4 +246,12 @@ button {
   100%{
       margin-left: -150%;
   }
+}
+
+#rick{
+  height: 300px;
+}
+
+p {
+ color: white;
 }
