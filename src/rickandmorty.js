@@ -11164,14 +11164,13 @@ export default {
   ]
 };
 
-
+/*let chi 
 export const example= {//objeto que voy a exportar
-    names
+    chi = info[1].results.name
 
 }
-function names(){
+/*function names(){
     let ex;
-    
  for(let i=0; i<3; i++){
 
 obj = JSON.parse();
@@ -11181,9 +11180,9 @@ obj = JSON.parse();
     for(let i=0; i<200; i++){
         let nameN=obj.results[i].name;
         console.log(nameN)
-        }*/
+        }
 
 
 }
 }
- 
+*/
