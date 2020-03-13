@@ -1,22 +1,86 @@
-import data  from './data/rickandmorty/rickandmorty.js';
+import change  from './data.js';
+
+console.log(change.genderR());
+//console.log(change.createCard())
+  /*for(let i=0; i<493; i++){
+    let imag = document.createElement("img");
+    imag.src = data.results[i].image;
+    let gender =  data.results[i].gender ;
+    let status = data.results[i].status;
+    let species= data.results[i].species;
+    let origin = data.results[i].origin.name;
+    let newid = data.results[i].origin.name;
+    let card = `<h1 id="PERSONAJES"></h1>
+                <div id="${newid}">
+                  <div class="flip-card">
+                    <p></p>
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" id="flip-card-front"  alt="Avatar" >
+                        <img src="${imag}">
+                      </div>
+                      <div class="flip-card-back" id="flip-card-back" alt="Avatar">
+                        <p>NOMBRE:${name}}</p>
+                        <p>GENERO:${gender}}</p>
+                        <p>STATUS:${status}}</p>
+                        <p>ESPECIE:${species}}</p>
+                        <p>ORIGEN:${origin}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div> `
+  document.getElementById("modal-content").appendChild(card);
+  }
+
 
 for(let i=0; i<493; i++){
   data.results[i].name;
   document.getElementById("lug").innerHTML ="PERSONAJES" ;
-//console.log(data.results[i].image);
+console.log(data.results[i].image);
   let por = document.createElement("img");
   por.src = data.results[i].image;
-  document.getElementById("flip-card-back").appendChild(por)
+  document.getElementById("flip-card-front").appendChild(por)
   let para = document.createElement("H2");
   para.innerText += (i+1)+" "+data.results[i].name ;
   document.getElementById("flip-card-back").appendChild(para);
   let inf = document.createElement("P");
   inf.innerHTML = "GENERO:" + data.results[i].gender +"<br>"+"STATUS:" + data.results[i].status+ "<br>"+"SPECIE:" + data.results[i].species+"<br>"+"ORIGEN:" + data.results[i].origin.name;
   document.getElementById("flip-card-back").appendChild(inf);
-}
+}*/
 // INFO RICK EN MODAL
-document.getElementById("bRick").innerHTML = data.results[0].name;
-document.getElementById("genderR").innerHTML = "GENERO:" + data.results[0].gender;
+
+document.getElementById("bRick").innerHTML = change.bRick()
+document.getElementById("genderR").innerHTML = change.genderR()
+document.getElementById("statusR").innerHTML = change.statusR()
+document.getElementById("speciesR").innerHTML = change.speciesR()
+document.getElementById("originR").innerHTML = change.originR()
+// INFO MORTY EN MODAL
+document.getElementById("bMorty").innerHTML = change.bMorty()
+document.getElementById("genderM").innerHTML = change.genderM()
+document.getElementById("statusM").innerHTML = change.statusM()
+document.getElementById("speciesM").innerHTML = change.speciesM()
+document.getElementById("originM").innerHTML = change.originM()
+// INFO SUMMER EN MODAL
+document.getElementById("bSummer").innerHTML = change.bSummer()
+document.getElementById("genderS").innerHTML = change.genderS()
+document.getElementById("statusS").innerHTML = change.statusS()
+document.getElementById("speciesS").innerHTML = change.speciesS()
+document.getElementById("originS").innerHTML = change.originS()
+// INFO BETH EN MODAL
+document.getElementById("bBeth").innerHTML = change.bBeth()
+document.getElementById("genderB").innerHTML = change.genderB()
+document.getElementById("statusB").innerHTML = change.statusB()
+document.getElementById("speciesB").innerHTML = change.speciesB()
+document.getElementById("originB").innerHTML = change.originB()
+// INFO JERRY EN MODAL
+document.getElementById("bJerry").innerHTML = change.bJerry()
+document.getElementById("genderJ").innerHTML = change.genderJ()
+document.getElementById("statusJ").innerHTML = change.statusJ()
+document.getElementById("speciesJ").innerHTML = change.speciesJ()
+document.getElementById("originJ").innerHTML = change.originJ()
+
+// INFO RICK EN MODAL
+/*document.getElementById("bRick").innerHTML = data.results[0].name;
+document.getElementById("genderR").innerHTML = "GENERO:" + change.results[0].gender;
 document.getElementById("statusR").innerHTML = "STATUS:" + data.results[0].status;
 document.getElementById("speciesR").innerHTML = "SPECIE:" + data.results[0].species;
 document.getElementById("originR").innerHTML = "ORIGEN:" + data.results[0].origin.name;
@@ -43,7 +107,7 @@ document.getElementById("bJerry").innerHTML = data.results[4].name;
 document.getElementById("genderJ").innerHTML = "GENERO:" + data.results[4].gender;
 document.getElementById("statusJ").innerHTML = "STATUS:" + data.results[4].status;
 document.getElementById("speciesJ").innerHTML = "SPECIE:" + data.results[4].species;
-document.getElementById("originJ").innerHTML = "ORIGEN:" + data.results[4].origin.name;
+document.getElementById("originJ").innerHTML = "ORIGEN:" + data.results[4].origin.name;*/
 
 // Get the modal
 let modalS = document.getElementById("modalImgS");
@@ -81,6 +145,7 @@ let spanUs = document.getElementsByClassName("closeUs")[0];
 // When the user clicks the button, open the modal 
 summer.onclick = function() {
   modalS.style.display = "block";
+  
 }
 spanS.onclick = function() {
   modalS.style.display = "none";
@@ -143,11 +208,45 @@ window.onclick = function(event) {
     modalJ.style.display = "none";
   }
 }
-
+console.log(change.value[1].name)
 // When the user clicks the button, open the modal 
 charters.onclick = function() {
   modalChar.style.display = "block";
-}
+  }
+
+ 
+  for(let i=0; i<493; i++){
+    let inf = document.createElement('div')
+    inf.className="per"
+  inf.innerHTML=`<h1 id="PERSONAJES"></h1>
+                <div id="${change.value[i].id}">
+                  <div class="flip-card">
+                    <p></p>
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front" id="flip-card-front"  alt="Avatar" >
+                        <img src="${change.value[i].image}">
+                      </div>
+                      <div class="flip-card-back" id="flip-card-back" alt="Avatar">
+                        <p>NOMBRE:${change.value[i].name}</p>
+                        <p>GENERO:${change.value[i].gender}</p>
+                        <p>STATUS:${change.value[i].status}</p>
+                        <p>ESPECIE:${change.value[i].species}</p>
+                        <p>ORIGEN:${change.value[i].origin}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div> `
+                document.getElementById("modalChar").appendChild(inf)
+                //console.log(inf)
+  }
+  
+  
+  //console.log(createCard())
+  //document.getElementsByClassName("modal-content").appendChild=createCard()
+ //change.value.forEach( createCard)
+
+
+
 spanChar.onclick = function() {
   modalChar.style.display = "none";
 }

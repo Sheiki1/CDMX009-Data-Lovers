@@ -182,7 +182,7 @@ body {
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content,.modal-con {
   text-align: center;
   background-color: #000000;
   margin: auto;
@@ -290,9 +290,9 @@ h2 {
 }
 
 img{
-  height: 175px;
+  height: 300px;
 }
-/*.flip-card {
+.flip-card {
   background-color: transparent;
   width: 300px;
   height: 300px;
@@ -327,7 +327,21 @@ img{
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #000000;
   color: white;
   transform: rotateY(180deg);
-}*/
+}
+.per{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+#modalChar{
+  display: flex;
+  flex-wrap: wrap;
+}
+.per{
+  margin : 10px;
+  display: flex;
+  justify-content: center;
+}
