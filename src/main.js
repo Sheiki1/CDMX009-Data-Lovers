@@ -1,53 +1,8 @@
 import change  from './data.js';
 
 console.log(change.genderR());
-//console.log(change.createCard())
-  /*for(let i=0; i<493; i++){
-    let imag = document.createElement("img");
-    imag.src = data.results[i].image;
-    let gender =  data.results[i].gender ;
-    let status = data.results[i].status;
-    let species= data.results[i].species;
-    let origin = data.results[i].origin.name;
-    let newid = data.results[i].origin.name;
-    let card = `<h1 id="PERSONAJES"></h1>
-                <div id="${newid}">
-                  <div class="flip-card">
-                    <p></p>
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front" id="flip-card-front"  alt="Avatar" >
-                        <img src="${imag}">
-                      </div>
-                      <div class="flip-card-back" id="flip-card-back" alt="Avatar">
-                        <p>NOMBRE:${name}}</p>
-                        <p>GENERO:${gender}}</p>
-                        <p>STATUS:${status}}</p>
-                        <p>ESPECIE:${species}}</p>
-                        <p>ORIGEN:${origin}}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div> `
-  document.getElementById("modal-content").appendChild(card);
-  }
 
-
-for(let i=0; i<493; i++){
-  data.results[i].name;
-  document.getElementById("lug").innerHTML ="PERSONAJES" ;
-console.log(data.results[i].image);
-  let por = document.createElement("img");
-  por.src = data.results[i].image;
-  document.getElementById("flip-card-front").appendChild(por)
-  let para = document.createElement("H2");
-  para.innerText += (i+1)+" "+data.results[i].name ;
-  document.getElementById("flip-card-back").appendChild(para);
-  let inf = document.createElement("P");
-  inf.innerHTML = "GENERO:" + data.results[i].gender +"<br>"+"STATUS:" + data.results[i].status+ "<br>"+"SPECIE:" + data.results[i].species+"<br>"+"ORIGEN:" + data.results[i].origin.name;
-  document.getElementById("flip-card-back").appendChild(inf);
-}*/
 // INFO RICK EN MODAL
-
 document.getElementById("bRick").innerHTML = change.bRick()
 document.getElementById("genderR").innerHTML = change.genderR()
 document.getElementById("statusR").innerHTML = change.statusR()
@@ -77,37 +32,6 @@ document.getElementById("genderJ").innerHTML = change.genderJ()
 document.getElementById("statusJ").innerHTML = change.statusJ()
 document.getElementById("speciesJ").innerHTML = change.speciesJ()
 document.getElementById("originJ").innerHTML = change.originJ()
-
-// INFO RICK EN MODAL
-/*document.getElementById("bRick").innerHTML = data.results[0].name;
-document.getElementById("genderR").innerHTML = "GENERO:" + change.results[0].gender;
-document.getElementById("statusR").innerHTML = "STATUS:" + data.results[0].status;
-document.getElementById("speciesR").innerHTML = "SPECIE:" + data.results[0].species;
-document.getElementById("originR").innerHTML = "ORIGEN:" + data.results[0].origin.name;
-// INFO MORTY EN MODAL
-document.getElementById("bMorty").innerHTML = data.results[1].name;
-document.getElementById("genderM").innerHTML = "GENERO:" + data.results[1].gender;
-document.getElementById("statusM").innerHTML = "STATUS:" + data.results[1].status;
-document.getElementById("speciesM").innerHTML = "SPECIE:" + data.results[1].species;
-document.getElementById("originM").innerHTML = "ORIGEN:" + data.results[1].origin.name;
-// INFO SUMMER EN MODAL
-document.getElementById("bSummer").innerHTML = data.results[2].name;
-document.getElementById("genderS").innerHTML = "GENERO:" + data.results[2].gender;
-document.getElementById("statusS").innerHTML = "STATUS:" + data.results[2].status;
-document.getElementById("speciesS").innerHTML = "SPECIE:" + data.results[2].species;
-document.getElementById("originS").innerHTML = "ORIGEN:" + data.results[2].origin.name;
-// INFO BETH EN MODAL
-document.getElementById("bBeth").innerHTML = data.results[3].name;
-document.getElementById("genderB").innerHTML = "GENERO:" + data.results[3].gender;
-document.getElementById("statusB").innerHTML = "STATUS:" + data.results[3].status;
-document.getElementById("speciesB").innerHTML = "SPECIE:" + data.results[3].species;
-document.getElementById("originB").innerHTML = "ORIGEN:" + data.results[3].origin.name;
-// INFO JERRY EN MODAL
-document.getElementById("bJerry").innerHTML = data.results[4].name;
-document.getElementById("genderJ").innerHTML = "GENERO:" + data.results[4].gender;
-document.getElementById("statusJ").innerHTML = "STATUS:" + data.results[4].status;
-document.getElementById("speciesJ").innerHTML = "SPECIE:" + data.results[4].species;
-document.getElementById("originJ").innerHTML = "ORIGEN:" + data.results[4].origin.name;*/
 
 // Get the modal
 let modalS = document.getElementById("modalImgS");
@@ -208,45 +132,162 @@ window.onclick = function(event) {
     modalJ.style.display = "none";
   }
 }
-console.log(change.value[1].name)
-// When the user clicks the button, open the modal 
+/*console.log(change.val[1].name)
+let inf =""
 charters.onclick = function() {
   modalChar.style.display = "block";
-  }
-
- 
   for(let i=0; i<493; i++){
-    let inf = document.createElement('div')
+    inf = document.createElement('div')
     inf.className="per"
-  inf.innerHTML=`<h1 id="PERSONAJES"></h1>
-                <div id="${change.value[i].id}">
-                  <div class="flip-card">
-                    <p></p>
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front" id="flip-card-front"  alt="Avatar" >
-                        <img src="${change.value[i].image}">
-                      </div>
-                      <div class="flip-card-back" id="flip-card-back" alt="Avatar">
-                        <p>NOMBRE:${change.value[i].name}</p>
-                        <p>GENERO:${change.value[i].gender}</p>
-                        <p>STATUS:${change.value[i].status}</p>
-                        <p>ESPECIE:${change.value[i].species}</p>
-                        <p>ORIGEN:${change.value[i].origin}</p>
+    inf.id= "per"
+    inf.innerHTML=`<h1 id="PERSONAJES"></h1>
+                  <div id="aver">
+                    <div class="flip-card">
+                      <p></p>
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front" id="flip-card-front"  alt="Avatar" >
+                          <img src="${change.val[i].image}">
+                        </div>
+                        <div class="flip-card-back" id="flip-card-back" alt="Avatar">
+                          <p>NOMBRE:${change.val[i].name}</p>
+                          <p>GENERO:${change.val[i].gender}</p>
+                          <p>STATUS:${change.val[i].status}</p>
+                          <p>ESPECIE:${change.val[i].species}</p>
+                          <p>ORIGEN:${change.val[i].origin.name}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div> `
-                document.getElementById("modalChar").appendChild(inf)
-                //console.log(inf)
+                  </div> `
+  document.getElementById("modal-con").appendChild(inf)   
+  let searchButton = document.getElementById("searchButton") 
+  //console.log(search)
+  searchButton.onclick = function () {
+    let searching = document.getElementById("ya")
+    let text = searching.value
+    console.log("ya se apreto")
+    console.log(text)
+    for(let i=0; i<493; i++){
+          if (change.val[i].name.includes (text)) {
+          console.log(text)
+          let newInf = document.createElement('div')
+          newInf.className="perT"
+          newInf.innerHTML=`<h1 id="PERSONAJES"></h1>
+                          <div id="aver">
+                              <div class="flip-card">
+                              <p></p>
+                              <div class="flip-card-inner">
+                                  <div class="flip-card-front" id="flip-card-front"  alt="Avatar" >
+                                  <img src="${change.val[i].image}">
+                                  </div>
+                                  <div class="flip-card-back" id="flip-card-back" alt="Avatar">
+                                  <p>NOMBRE:${change.val[i].name}</p>
+                                  <p>GENERO:${change.val[i].gender}</p>
+                                  <p>STATUS:${change.val[i].status}</p>
+                                  <p>ESPECIE:${change.val[i].species}</p>
+                                  <p>ORIGEN:${change.val[i].origin.name}</p>
+                                  </div>
+                              </div>
+                              </div>
+                          </div> `
+          //inf= modal-con.replaceChild(newInf, inf);
+          //document.getElementById("modal-con").removeChild(inf)
+          document.getElementById("modal-con").appendChild(newInf)
+          console.log(change.val[i].name)
+          //inf.innerHTML=""
+          //document.getElementById("modal-con").appendChild(inf)
+          console.log(inf)
+          //document.getElementById("modal-con").appendChild(inf)
+        }else{
+          //document.getElementById("modal-con").appendChild(inf)
+          let x= "ño ño"
+        }
+    }
   }
-  
-  
-  //console.log(createCard())
-  //document.getElementsByClassName("modal-content").appendChild=createCard()
- //change.value.forEach( createCard)
-
-
-
+     
+  }
+}*/
+let searchButton = document.getElementById("searchButton") 
+search=searchButton.onclick
+//console.log(search)
+function search() {
+let searching = document.getElementById("ya")
+let text = searching.value
+console.log("ya se apreto")
+console.log(text)
+for(let i=0; i<493; i++){
+        if (change.val[i].name.includes (text)) {
+        console.log(text)
+        let newInf = document.createElement('div')
+        newInf.className="perT"
+        newInf.innerHTML=`<h1 id="PERSONAJES"></h1>
+                        <div id="aver">
+                            <div class="flip-card">
+                            <p></p>
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" id="flip-card-front"  alt="Avatar" >
+                                <img src="${change.val[i].image}">
+                                </div>
+                                <div class="flip-card-back" id="flip-card-back" alt="Avatar">
+                                <p>NOMBRE:${change.val[i].name}</p>
+                                <p>GENERO:${change.val[i].gender}</p>
+                                <p>STATUS:${change.val[i].status}</p>
+                                <p>ESPECIE:${change.val[i].species}</p>
+                                <p>ORIGEN:${change.val[i].origin.name}</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div> `
+        //inf= modal-con.replaceChild(newInf, inf);
+        //document.getElementById("modal-con").removeChild(inf)
+        document.getElementById("modal-con").appendChild(newInf)
+        console.log(change.val[i].name)
+        //inf.innerHTML=""
+        //document.getElementById("modal-con").appendChild(inf)
+        console.log(inf)
+        //document.getElementById("modal-con").appendChild(inf)
+    }else{
+        //document.getElementById("modal-con").appendChild(inf)
+        let x= "ño ño"
+    }
+}
+}
+console.log(change.val[1].name)
+let inf =""
+charters.onclick = function() {
+  modalChar.style.display = "block";
+  let searching = document.getElementById("ya")
+  let text = searching.value
+  //if (search()){
+  //  inf.innerHTML=""
+  //  document.getElementById("modal-con").appendChild(inf)
+  //}else{
+    for(let i=0; i<493; i++){
+        inf = document.createElement('div')
+        inf.className="per"
+        inf.id= "per"
+        inf.innerHTML=`<h1 id="PERSONAJES"></h1>
+                    <div id="aver">
+                        <div class="flip-card">
+                        <p></p>
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front" id="flip-card-front"  alt="Avatar" >
+                            <img src="${change.val[i].image}">
+                            </div>
+                            <div class="flip-card-back" id="flip-card-back" alt="Avatar">
+                            <p>NOMBRE:${change.val[i].name}</p>
+                            <p>GENERO:${change.val[i].gender}</p>
+                            <p>STATUS:${change.val[i].status}</p>
+                            <p>ESPECIE:${change.val[i].species}</p>
+                            <p>ORIGEN:${change.val[i].origin.name}</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div> `
+    document.getElementById("modal-con").appendChild(inf)   
+    
+    }
+ 
+}
 spanChar.onclick = function() {
   modalChar.style.display = "none";
 }
@@ -284,5 +325,3 @@ window.onclick = function(event) {
     modalUs.style.display = "none";
   }
 }
-
-

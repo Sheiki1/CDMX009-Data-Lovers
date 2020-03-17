@@ -74,7 +74,7 @@ const showCard=()=>{
   allData.innerHTML=items;
 };
 showCard();*/
-let value = data.results
+let val = data.results
 const change = {
   //createCard,
   bRick,genderR,statusR,speciesR,originR,
@@ -82,7 +82,7 @@ const change = {
   bMorty,genderM,statusM,speciesM,originM,
   bBeth,genderB,statusB,speciesB,originB,
   bJerry,genderJ,statusJ,speciesJ,originJ,
-  value
+  val
   //showCard,createCard
 };
 

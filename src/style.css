@@ -182,13 +182,21 @@ body {
 }
 
 /* Modal Content */
-.modal-content,.modal-con {
+.modal-content {
   text-align: center;
   background-color: #000000;
   margin: auto;
   padding: 10px;
   border: 1px solid #000000;
   width: 80%;
+}
+.modal-con {
+  text-align: center;
+  background-color: #000000;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #000000;
+  width: 95%;
 }
 
 /* The Close Button */
@@ -290,12 +298,12 @@ h2 {
 }
 
 img{
-  height: 300px;
+  height: 200px;
 }
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   perspective: 1000px;
 }
 
@@ -334,14 +342,34 @@ img{
 .per{
   display: flex;
   flex-wrap: wrap;
-  
+  margin : 10px;
+  display: flex;
+  justify-content: center;
 }
-#modalChar{
+
+.modal-con {
   display: flex;
   flex-wrap: wrap;
+
 }
-.per{
-  margin : 10px;
+#searching{
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  width: 125px;
+  align-content: center;
+  
+}
+#searchButton{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 50px;
+  align-content: center;
+}
+#busqueda{
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
