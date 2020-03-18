@@ -132,7 +132,7 @@ window.onclick = function(event) {
     modalJ.style.display = "none";
   }
 }
-/*console.log(change.val[1].name)
+console.log(change.val[1].name)
 let inf =""
 charters.onclick = function() {
   modalChar.style.display = "block";
@@ -205,10 +205,11 @@ charters.onclick = function() {
   }
      
   }
-}*/
-let searchButton = document.getElementById("searchButton") 
+}
+/*let searchButton = document.getElementById("searchButton") 
 search=searchButton.onclick
 //console.log(search)
+
 function search() {
 let searching = document.getElementById("ya")
 let text = searching.value
@@ -251,6 +252,7 @@ for(let i=0; i<493; i++){
     }
 }
 }
+console.log(search)
 console.log(change.val[1].name)
 let inf =""
 charters.onclick = function() {
@@ -287,7 +289,7 @@ charters.onclick = function() {
     
     }
  
-}
+}*/
 spanChar.onclick = function() {
   modalChar.style.display = "none";
 }
