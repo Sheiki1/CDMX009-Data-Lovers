@@ -88,46 +88,46 @@ y de equipo.
 
 ### UX
 
-- [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-- [ ] Crear prototipos para obtener _feedback_ e iterar.
-- [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+- [x] Diseñar la aplicación pensando y entendiendo al usuario.
+- [x] Crear prototipos para obtener _feedback_ e iterar.
+- [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 - [ ] Planear y ejecutar _tests_ de usabilidad.
 
 ### HTML y CSS
 
-- [ ] Entender y reconocer por qué es importante el HTML semántico.
-- [ ] Identificar y entender tipos de selectores en CSS.
-- [ ] Entender como funciona `flexbox` en CSS.
-- [ ] Construir tu aplicación respetando el diseño planeado (maquetación).
+- [x] Entender y reconocer por qué es importante el HTML semántico.
+- [x] Identificar y entender tipos de selectores en CSS.
+- [x] Entender como funciona `flexbox` en CSS.
+- [x] Construir tu aplicación respetando el diseño planeado (maquetación).
 
 ### DOM
 
-- [ ] Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).
-- [ ] Manejar eventos del DOM. (addEventListener)
-- [ ] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
+- [x] Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).
+- [x] Manejar eventos del DOM. (addEventListener)
+- [x] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
 
 ### Javascript
 
-- [ ] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
-- [ ] Manipular objects (key | value).
-- [ ] Entender el uso de condicionales (`if-else` | `switch`).
-- [ ] Entender el uso de bucles (`for` | `forEach`).
-- [ ] Entender la diferencia entre expression y statements.
-- [ ] Utilizar funciones (parámetros | argumentos | valor de retorno).
-- [ ] Entender la diferencia entre tipos de datos atómicos y estructurados.
-- [ ] Utilizar ES Modules (`import` | `export`).
+- [x] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
+- [x] Manipular objects (key | value).
+- [x] Entender el uso de condicionales (`if-else` | `switch`).
+- [x] Entender el uso de bucles (`for` | `forEach`).
+- [x] Entender la diferencia entre expression y statements.
+- [x] Utilizar funciones (parámetros | argumentos | valor de retorno).
+- [x] Entender la diferencia entre tipos de datos atómicos y estructurados.
+- [x] Utilizar ES Modules (`import` | `export`).
 
 ### Pruebas Unitarias (_testing_)
 - [ ] Testear funciones (funciones puras).
 
 ### Git y GitHub
-- [ ] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
-- [ ] Utilizar los repositorios de GitHub (`clone` | `fork` | gh-pages).
-- [ ] Colaborar en Github (pull requests).
+- [x] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
+- [x] Utilizar los repositorios de GitHub (`clone` | `fork` | gh-pages).
+- [x] Colaborar en Github (pull requests).
 
 ### Buenas prácticas de desarrollo
-- [ ] Organizar y dividir el código en módulos (Modularización).
-- [ ] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
+- [x] Organizar y dividir el código en módulos (Modularización).
+- [x] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
 - [ ] Utilizar linter para seguir buenas prácticas (ESLINT).
 
 ## 4. Consideraciones generales
@@ -143,24 +143,28 @@ Los criterios que deberás considerar para saber si has completado este proyecto
 son:
 
 ### Definición del producto
+Rick y Morty es una serie de televisión estadounidense de adultos. La serie sigue las desventuras de un científico, Rick, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos. La serie ha sido aclamada universalmente por su originalidad, creatividad y humor.
 
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
+Personajes:
+Estos personajes conforman el núcleo familiar de los personajes principales 
+•	Rick Sánchez: Es un viejo científico que acostumbra a hablar de manera vulgar y entre eructos. Es padre de Beth Sánchez y es el abuelo materno de Summer y Morty. Es un hombre que ha pasado gran parte de su vida viajando a través de diversas galaxias. Es irresponsable, asocial, chiflado, ambicioso y desconsiderado ante su propia familia. Suele llevar a Morty a sus aventuras para usarlo en sus viajes.
+•	Morty Smith : Es un chico de 14 años, nieto de Rick, quien lo usa frecuentemente en sus aventuras. Posee una inteligencia pobre, es de estatura baja para su edad y está enamorado de su compañera de escuela llamada Jessica.
+•	Summer Smith: Es la hermana mayor de 17 años de Morty, una típica adolescente que suele ser superficial y obsesionada con mejorar su imagen. Es en general parecida a su madre y generalmente se la muestra como una chica lista y con sentido del humor, pero también muestras rastros de su padre como la búsqueda de aprobación.
+•	Beth Smith: Es la hija de Rick y a la vez madre de Morty y Summer. Trabaja en hospital de caballos como Cirujana especializada de caballos, pero muchas veces se reprocha no haber sido Médico. Usualmente tiene discusiones con su esposo, habiendo una incompatibilidad en ambos.
+•	Jerry Smith: Es el padre de Morty y de Summer. Es una persona bastante patética, Rick lo odia por haberle quitado a su hija, es un mal padre de familia, es inseguro de sí mismo y tiene problemas en su matrimonio con Beth.
+
+
+Usuario ideal: una persona que sea fan de la serie (que disfrute de la ciencia ficción ,caricaturas y la sátira) y desee tener una descripción más amplia sobre cada uno de  los personajes y su status en el universo de rick y morty .
 
 ### Historias de usuario
 
-Una vez que entiendas las necesidades de tus usuarios, escribe las [Historias
-de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
-todo lo que el usuario necesita hacer/ver. Las **Historias de Usuario** deben
-ser el resultado de tu proceso de entendimiento de tus usuarios.
-
-Asegúrate de incluir la definición de terminado (_definition of done_) y los
-Criterios de Aceptación para cada una.
-
-En la medida de lo posible, termina de construir una historia de usuario antes
-de pasar a la siguiente (Cumple con Definición de Terminado + Criterios de
-Aceptación).
+HISTORIA DE USUARIO 
+ 
+YO COMO: fan de las series de ciencia y ficción 
+QUIERO UNA: pagina sencilla para usar,que contenga la opcion de obtener informacion
+dependiendo que este buscando en el momento ,ya sea por personajes o por las dimensiones
+mas destacadas de la serie y los personajes mas destacados del momento.
+PARA: tener un mejor conocimiento de la serie y poder analizar las teorias.
 
 ### Diseño de la Interfaz de Usuario
 
