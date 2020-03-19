@@ -91,7 +91,7 @@ y de equipo.
 - [x] Diseñar la aplicación pensando y entendiendo al usuario.
 - [x] Crear prototipos para obtener _feedback_ e iterar.
 - [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
-- [ ] Planear y ejecutar _tests_ de usabilidad.
+- [x] Planear y ejecutar _tests_ de usabilidad.
 
 ### HTML y CSS
 
@@ -146,11 +146,16 @@ son:
 Rick y Morty es una serie de televisión estadounidense de adultos. La serie sigue las desventuras de un científico, Rick, y su fácilmente influenciable nieto, Morty, quienes pasan el tiempo entre la vida doméstica y los viajes espaciales, temporales e intergalácticos. La serie ha sido aclamada universalmente por su originalidad, creatividad y humor.
 
 Personajes:
-Estos personajes conforman el núcleo familiar de los personajes principales 
+Estos personajes conforman el núcleo familiar de los personajes principales
+
 •	Rick Sánchez: Es un viejo científico que acostumbra a hablar de manera vulgar y entre eructos. Es padre de Beth Sánchez y es el abuelo materno de Summer y Morty. Es un hombre que ha pasado gran parte de su vida viajando a través de diversas galaxias. Es irresponsable, asocial, chiflado, ambicioso y desconsiderado ante su propia familia. Suele llevar a Morty a sus aventuras para usarlo en sus viajes.
+
 •	Morty Smith : Es un chico de 14 años, nieto de Rick, quien lo usa frecuentemente en sus aventuras. Posee una inteligencia pobre, es de estatura baja para su edad y está enamorado de su compañera de escuela llamada Jessica.
+
 •	Summer Smith: Es la hermana mayor de 17 años de Morty, una típica adolescente que suele ser superficial y obsesionada con mejorar su imagen. Es en general parecida a su madre y generalmente se la muestra como una chica lista y con sentido del humor, pero también muestras rastros de su padre como la búsqueda de aprobación.
+
 •	Beth Smith: Es la hija de Rick y a la vez madre de Morty y Summer. Trabaja en hospital de caballos como Cirujana especializada de caballos, pero muchas veces se reprocha no haber sido Médico. Usualmente tiene discusiones con su esposo, habiendo una incompatibilidad en ambos.
+
 •	Jerry Smith: Es el padre de Morty y de Summer. Es una persona bastante patética, Rick lo odia por haberle quitado a su hija, es un mal padre de familia, es inseguro de sí mismo y tiene problemas en su matrimonio con Beth.
 
 
