@@ -339,7 +339,7 @@ img{
   color: white;
   transform: rotateY(180deg);
 }
-.per{
+.per ,.perT{
   display: flex;
   flex-wrap: wrap;
   margin : 10px;
@@ -373,3 +373,12 @@ img{
   display: flex;
   justify-content: center;
 }
+
+#result{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+

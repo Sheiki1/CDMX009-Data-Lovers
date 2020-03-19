@@ -41,7 +41,7 @@ let modalB = document.getElementById("modalImgB");
 let modalJ = document.getElementById("modalImgJ");
 
 let modalChar = document.getElementById("modalChar");
-let modalPlace = document.getElementById("modalPlace");
+//let modalPlace = document.getElementById("modalPlace");
 let modalUs = document.getElementById("modalUs");
 
 // Get the button that opens the modal
@@ -52,7 +52,7 @@ let beth = document.getElementById("botonimagenB");
 let jerry = document.getElementById("botonimagenJ");
 
 let charters = document.getElementById("chartersButton");
-let places = document.getElementById("placesButton");
+//let places = document.getElementById("placesButton");
 let us=document.getElementById("usButton")
 
 // Get the <span> element that closes the modal
@@ -63,7 +63,7 @@ let spanB = document.getElementsByClassName("closeB")[0];
 let spanJ = document.getElementsByClassName("closeJ")[0];
 
 let spanChar = document.getElementsByClassName("closeChar")[0];
-let spanPlaces = document.getElementsByClassName("closePlaces")[0];
+//let spanPlaces = document.getElementsByClassName("closePlaces")[0];
 let spanUs = document.getElementsByClassName("closeUs")[0];
 
 // When the user clicks the button, open the modal 
@@ -134,6 +134,7 @@ window.onclick = function(event) {
 }
 console.log(change.val[1].name)
 let inf =""
+let newInf =""
 charters.onclick = function() {
   modalChar.style.display = "block";
   for(let i=0; i<493; i++){
@@ -169,7 +170,7 @@ charters.onclick = function() {
     for(let i=0; i<493; i++){
           if (change.val[i].name.includes (text)) {
           console.log(text)
-          let newInf = document.createElement('div')
+          newInf = document.createElement('div')
           newInf.className="perT"
           newInf.innerHTML=`<h1 id="PERSONAJES"></h1>
                           <div id="aver">
@@ -191,7 +192,7 @@ charters.onclick = function() {
                           </div> `
           //inf= modal-con.replaceChild(newInf, inf);
           //document.getElementById("modal-con").removeChild(inf)
-          document.getElementById("modal-con").appendChild(newInf)
+          document.getElementById("result").appendChild(newInf)
           console.log(change.val[i].name)
           //inf.innerHTML=""
           //document.getElementById("modal-con").appendChild(inf)
@@ -300,7 +301,7 @@ window.onclick = function(event) {
   }
 }
 // When the user clicks the button, open the modal 
-places.onclick = function() {
+/*places.onclick = function() {
   modalPlace.style.display = "block";
 }
 // When the user clicks on <span> (x), close the modal
@@ -312,7 +313,7 @@ window.onclick = function(event) {
   if (event.target == modalPlace) {
     modalPlace.style.display = "none";
   }
-}
+}*/
 // When the user clicks the button, open the modal 
 us.onclick = function() {
   modalUs.style.display = "block";
